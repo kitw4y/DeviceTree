@@ -11,10 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common RisingOS stuff.
+$(call inherit-product, vendor/rising/config/rising.mk)
 
-PRODUCT_NAME := lineage_lancelot
+# RisingOs Flags
+RISING_MAINTAINER := Lang
+WITH_GMS := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := rising_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
