@@ -11,8 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Syberia stuff.
+$(call inherit-product, vendor/syberia/common.mk)
+
+# Gapps
+WITH_GMS=true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+EXTRA_UDFPS_ANIMATIONS := true
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_NAME := lineage_lancelot
 PRODUCT_DEVICE := lancelot
