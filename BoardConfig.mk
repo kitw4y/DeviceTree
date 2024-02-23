@@ -26,3 +26,5 @@ TARGET_KERNEL_CONFIG := lancelot_defconfig
 
 # Inherit the proprietary files
 include vendor/xiaomi/lancelot/BoardConfigVendor.mk
+
+ALLOW_MISSING_DEPENDENCIES=true
