@@ -18,9 +18,13 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # OFFICIAL Stuff
+ELIXIR_MAINTAINER := Lang
 ELIXIR_BUILD_TYPE := OFFICIAL
 BUILD_USERNAME := LANG
 BUILD_HOSTNAME := Elixir
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+EXCLUDE_LAWNCHAIR := true
 
 PRODUCT_NAME := aosp_lancelot
 PRODUCT_DEVICE := lancelot
