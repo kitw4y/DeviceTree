@@ -18,12 +18,10 @@ $(call inherit-product, vendor/syberia/common.mk)
 WITH_GMS=true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-EXTRA_UDFPS_ANIMATIONS := true
-
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := lineage_lancelot
+PRODUCT_NAME := syberia_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
