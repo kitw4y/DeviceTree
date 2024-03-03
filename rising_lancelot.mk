@@ -18,7 +18,6 @@ $(call inherit-product, vendor/rising/config/rising.mk)
 RISING_MAINTAINER := Lang
 RISING_CHIPSET := MT6768
 WITH_GMS := true
-TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 RISING_BATTERY := 5020mAh
 RISING_DISPLAY := 2340x1080
